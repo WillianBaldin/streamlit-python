@@ -168,7 +168,7 @@ col1, col2, col3, col4, col5 = st.columns(5)
 
 # Total de registros
 total_registros = len(df_filtrado)
-col1.metric("👥 Total de Pessoas", f"{total_registros:,}")
+col1.metric("👥 Total de Pessoas", f"{total_registros:}")
 
 # Idade média
 idade_media = df_filtrado["idade"].mean()
@@ -393,3 +393,4 @@ with st.expander("Clique para expandir e visualizar a tabela completa"):
 
 st.markdown("---")
 st.markdown("*Dashboard interativo criado com Streamlit e Plotly*")
+
